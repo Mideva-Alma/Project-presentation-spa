@@ -18,9 +18,12 @@ function App() {
   );
 
   return (
-    <div>
+    <div className="app-container">
       <Navbar />
-      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <SearchBar 
+        searchTerm={searchTerm} 
+        setSearchTerm={setSearchTerm} 
+      />
       <ProjectForm addProject={addProject} />
       <ProjectList projects={filteredProjects} />
     </div>
